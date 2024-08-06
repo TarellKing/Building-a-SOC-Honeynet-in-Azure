@@ -1,4 +1,4 @@
-# Building a SOC + Honeynet in Azure (Live Traffic)
+![image](https://github.com/user-attachments/assets/34659811-9ace-4bbd-bc2d-c741615b5d0d)# Building a SOC + Honeynet in Azure (Live Traffic)
 ![Cloud Honeynet / SOC](https://i.imgur.com/ZWxe03e.jpg)
 
 ## Introduction
@@ -32,23 +32,25 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+
+![Windows](https://github.com/user-attachments/assets/82b04ca2-22d1-4186-8b74-a14d2ffa8c96)
+![sql server](https://github.com/user-attachments/assets/e8312f0d-a654-4464-83b9-fcd327215ab7)
+![nsg firewall](https://github.com/user-attachments/assets/07db6af0-7b33-4ecb-b7e7-2d160cd662af)
+![Linux](https://github.com/user-attachments/assets/b468c6ce-1906-413e-9a2f-06c872b8f3af)
 
 ## Metrics Before Hardening / Security Controls
 
 The following table shows the metrics we measured in our insecure environment for 24 hours:
-Start Time 2023-03-15 17:04:29
-Stop Time 2023-03-16 17:04:29
+Start Time 2024-06-29 
+Stop Time 2024-06-30 
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 19470
-| Syslog                   | 3028
-| SecurityAlert            | 10
-| SecurityIncident         | 348
-| AzureNetworkAnalytics_CL | 843
+| SecurityEvent            | 24676
+| Syslog                   | 5024
+| SecurityAlert            | 23
+| SecurityIncident         | 299
+| AzureNetworkAnalytics_CL | 559
 
 ## Attack Maps Before Hardening / Security Controls
 
@@ -57,13 +59,13 @@ Stop Time 2023-03-16 17:04:29
 ## Metrics After Hardening / Security Controls
 
 The following table shows the metrics we measured in our environment for another 24 hours, but after we have applied security controls:
-Start Time 2024-06-18 15:37
-Stop Time	2024-06-19 15:37
+Start Time 2024-07-02 
+Stop Time	2024-07-03 
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 8778
-| Syslog                   | 9440
+| SecurityEvent            | 50
+| Syslog                   | 33
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
