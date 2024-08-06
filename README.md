@@ -64,8 +64,8 @@ Stop Time	2024-07-03
 
 | Metric                   | Count
 | ------------------------ | -----
-| SecurityEvent            | 50
-| Syslog                   | 33
+| SecurityEvent            | 6750
+| Syslog                   | 104
 | SecurityAlert            | 0
 | SecurityIncident         | 0
 | AzureNetworkAnalytics_CL | 0
